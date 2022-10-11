@@ -1,0 +1,104 @@
+libpackage-variant-perl (1.003002-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 14:32:24 +0100
+
+libpackage-variant-perl (1.003002-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release(s).
+    + Wwitch to strictures 2.
+    + Add make_variant_package_name optional method.
+
+  [ Jonas Smedegaard ]
+  * Bump debhelper compatibility level to 9.
+  * Update copyright info:
+    + Use License-Grant and License-Reference fields.
+      Thanks to Ben Finney.
+    + Extend coverage of packaging to include current year.
+  * Override lintian regarding license in License-Reference field.
+    See bug#786450.
+  * Override lintian regarding build-depending unversioned on debhelper.
+  * Update package relations:
+    + Tighten to (build-)depend versioned on libstrictures-perl.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 04 Aug 2015 15:20:55 +0200
+
+libpackage-variant-perl (1.002002-3) unstable; urgency=medium
+
+  * Really update long description.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 14 Oct 2014 13:54:23 +0200
+
+libpackage-variant-perl (1.002002-2) unstable; urgency=medium
+
+  [ upstream ]
+  * New release(s).
+    + Specify perl prerequisite on metadata.
+    + Documentation fixes and clarifications.
+    + Fix license in metadata.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to use cgit web frontend.
+
+  [ Jonas Smedegaard ]
+  * Declare compliance with Debian Policy 3.9.6.
+  * Update long description, reflecting upstream change.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 14 Oct 2014 12:10:59 +0200
+
+libpackage-variant-perl (1.002000-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release.
+    + Add build_variant method on variable packages, to allow avoiding
+      importing a generator sub.
+    + Fix pragmas applied by modules listed in "importing" from leaking
+      out into unexpected scopes.
+
+  [ Jonas Smedegaard ]
+  * Bump to standards-version 3.9.5.
+  * Fix use canonical Vcs-Git URL.
+  * Update watch file to use metacpan.org URL.
+  * Update homepage.
+  * Update copyright info:
+    + Extend coverage of packaging.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 18 May 2014 16:13:12 +0200
+
+libpackage-variant-perl (1.001004-1) unstable; urgency=low
+
+  [ upstream ]
+  * New release.
+    + Fix documentation of "build_variant_of" method.
+
+  [ Jonas Smedegaard ]
+  * Add README.source emphasizing control.in file as *not* a
+    show-stopper for contributions, referring to wiki page for details.
+  * Add git URL as alternate source.
+  * Stop track md5sum of upstream tarball.
+  * Stop track upstream development releases.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 09 May 2013 19:10:14 +0200
+
+libpackage-variant-perl (1.001003-1) unstable; urgency=low
+
+  [ upstream ]
+  * New release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 09 Apr 2013 16:41:32 +0200
+
+libpackage-variant-perl (1.001002-2) unstable; urgency=low
+
+  * Build-depend on libmoo-perl, to improve testsuite.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 20 Mar 2013 16:18:44 +0100
+
+libpackage-variant-perl (1.001002-1) unstable; urgency=low
+
+  * Initial packaging release.
+    Closes: bug#703488.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 20 Mar 2013 11:06:57 +0100

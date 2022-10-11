@@ -1,0 +1,36 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Package::Variant
+Upstream-Contact: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Package-Variant
+Source: http://search.cpan.org/dist/Package-Variant/
+ git://git.shadowcat.co.uk/p5sagit/Package-Variant.git
+
+Files: *
+Copyright:
+  © 2010-2012, Matt S. Trout (cpan:MSTROUT) <mst@shadowcat.co.uk>
+  © 2010-2012, Robert Sedlacek (cpan:PHAYLON) <r.sedlacek@shadowcat.co.uk>
+License-Grant:
+ This library is free software and may be distributed under the same
+ terms as perl itself.
+License: Artistic or GPL-1+
+Comment:
+ Perl 5 is licensed under either the 'Artistic license' or the 'GNU
+ General Public License' version 1 or later.
+
+Files: debian/*
+Copyright:
+  © 2013-2015, Jonas Smedegaard <dr@jones.dk>
+License-Grant:
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation; either version 3, or (at your option) any
+ later version.
+License: GPL-3+
+
+License: Artistic
+License-Reference: /usr/share/common-licenses/Artistic
+
+License: GPL-1+
+License-Reference: /usr/share/common-licenses/GPL-1
+
+License: GPL-3+
+License-Reference: /usr/share/common-licenses/GPL-3

@@ -1,0 +1,38 @@
+Source: libpackage-variant-perl
+Section: perl
+Priority: optional
+Build-Depends: cdbs,
+ devscripts,
+ perl,
+ debhelper,
+ dh-buildinfo,
+ libimport-into-perl,
+ libmodule-runtime-perl (>= 0.013),
+ libstrictures-perl (>= 2),
+ libtest-fatal-perl,
+ libmoo-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Jonas Smedegaard <dr@jones.dk>
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libpackage-variant-perl
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libpackage-variant-perl.git
+Homepage: http://git.shadowcat.co.uk/gitweb/gitweb.cgi?p=p5sagit/Package-Variant.git
+
+Package: libpackage-variant-perl
+Architecture: all
+Depends: ${cdbs:Depends},
+ ${misc:Depends},
+ ${perl:Depends}
+Recommends: ${cdbs:Recommends}
+Suggests: ${cdbs:Suggests}
+Description: parameterizable packages
+ Package::Variant allows you to build a variable package that contains a
+ package template and can use it to build variant packages at runtime.
+ .
+ Your variable package will export a subroutine which will build a
+ variant package, combining its arguments with the template, and return
+ the name of the new variant package.
+ .
+ The implementation does not care about what kind of packages it builds,
+ be they simple function exporters, classes, singletons or something
+ entirely different.
